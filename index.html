@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-eqiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 
-    <title>Karolina Jasiñska</title>
+    <title>Karolina JasiÅ„ska</title>
 
     <meta name="description" content="portfolio" />
     <meta name="keywords" content="front-end, tworzenie, stron, internetowych, www, portfolio" />
@@ -87,12 +87,12 @@
                         <li><a href="#">Lorem</a></li>
                     </ul>
                 </li>
-                <li><a id="link3" href="#">Umiejêtnoœci</a></li>
+                <li><a id="link3" href="#">UmiejÄ™tnoÅ›ci</a></li>
                 <li><a id="link4" href="#">Projekty</a></li>
                 <li><a id="link5" href="#">Kontakt</a></li>
             </ol>
         </div>
-        <!--    do przyklejoneog nag³owka-->
+        <!--    do przyklejoneog nagÅ‚owka-->
         <script>
             window.onscroll = function() {
                 myFunction()
@@ -112,7 +112,9 @@
         </script>
         <article>
             <article id="o_mnie">
-                <h1>O mnie</h1>
+                <h1 class="naglowek">O mnie
+                    <span class="underline"></span>
+                </h1>
                 <img id="photo-face" src="zdjecia/tlo2.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore magni illo, dolore vero assumenda! Iure consectetur quas facilis nostrum fuga eius esse dolorem. Architecto autem praesentium nam maxime saepe. Voluptates minima ducimus dolorem dolor eveniet adipisci. Sed reiciendis quos nihil odio nostrum quia maxime eaque minima. Accusantium, nemo vero porro.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis consectetur eligendi distinctio accusamus architecto omnis quos excepturi corporis natus, sunt!</p>
@@ -124,7 +126,7 @@
 
 
             <article id="umiejetnosci">
-                <!--                <h1>Umiejêtnoœci</h1>-->
+                <!--                <h1>UmiejÄ™tnoÅ›ci</h1>-->
                 <div class="parallax" data-parallax="scroll" data-z-index="0" data-image-src="zdjecia/parallax.jpg"></div>
                 <div>
                     <div class="skills html"><img src="png/html.png" alt=""></div>
@@ -149,30 +151,30 @@
 
 
 
-            <article id="kontakt">
-                <h1>Kontakt</h1>
-                <div id="map" style="width:80%;height:400px"></div>
-                <!--do znacznika domu na mapie-->
-                <script>
-                    function myMap() {
-                        var mapCanvas = document.getElementById("map");
-                        var myCenter = new google.maps.LatLng(50.71485, 22.68988);
-                        var mapOptions = {
-                            center: myCenter,
-                            zoom: 15,
-                            mapTypeId: google.maps.MapTypeId.HYBRID
-                        };
-                        var map = new google.maps.Map(mapCanvas, mapOptions);
-                        var marker = new google.maps.Marker({
-                            position: myCenter,
-                            animation: google.maps.Animation.BOUNCE
-                        });
-                        marker.setMap(map);
-                    }
 
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?my-project-1532612006297&callback=myMap"></script>
-            </article>
+            <div id="particles-js">
+
+                <form action="#" id="contact">
+                    <h1 class="naglowek">Kontakt
+                        <span class="underline"></span>
+                    </h1>
+                    <input type="text" name="imie" placeholder="Imie" onfocus="this.placeholder=''" onblur="this.placeholder='Imie'">
+                    <input type="email" name="email" placeholder="E-mail" onfocus="this.placeholder=''" onblur="this.placeholder='E-mail'"><br>
+                    <input type="text" name="tytul" placeholder="TytuÅ‚" onfocus="this.placeholder=''" onblur="this.placeholder='TytuÅ‚'"><br>
+                    <textarea name="message" rows="5" placeholder="Twoja wiadomoÅ›Ä‡" onfocus="this.placeholder=''" onblur="this.placeholder='Twoja wiadomoÅ›Ä‡'" style="background-color:#efefef"> 
+            </textarea><br>
+                    <input type="submit" value="WyÅ›lij">
+                </form>
+            </div>
+            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+            <script>
+                particlesJS.load('particles-js', 'particles.json',
+                    function() {
+                        console.log('particles.json loaded...')
+                    })
+
+            </script>
 
 
             <section class="socials">
@@ -195,46 +197,161 @@
             </section>
         </article>
 
-
-
-
-
-        <div id="particles-js">
-
-                <form action="#" id="contact">
-                   <input type="text" name="imie"  placeholder="Imie" 
-                    onfocus="this.placeholder=''" onblur="this.placeholder='Imie'">
-                   <input type="text" name="nazwisko"  placeholder="Nazwisko" 
-                    onfocus="this.placeholder=''" onblur="this.placeholder='Nazwisko'">
-                    <input type="email" name="email" placeholder="E-mail" 
-                    onfocus="this.placeholder=''" onblur="this.placeholder='E-mail'"><br>
-                    <input type="text" name="tytul" placeholder="Tytu³" 
-                    onfocus="this.placeholder=''" onblur="this.placeholder='Tytu³'">
-                     <textarea name="message" rows="5" cols="60" placeholder="Twoja wiadomoœæ" onfocus="this.placeholder=''" onblur="this.placeholder='Twoja wiadomoœæ'" style="background-color:#efefef; width: 40%"> 
-            </textarea><br>
-                    <input type="submit" value="Wyœlij">
-                </form>
-        </div>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-        <script>
-            particlesJS.load('particles-js', 'particles.json',
-                function() {
-                    console.log('particles.json loaded...')
-                })
-
-        </script>
-
-
-
-
-
         <div class="footer">
-            2018 &copy; Karolina Jasiñska
+            2018 &copy; Karolina JasiÅ„ska
         </div>
     </div>
+
+
+
+
+
+    <article id="kontakt">
+        <div id="map" style="width:80%;height:400px"></div>
+        <!--do znacznika domu na mapie-->
+        <script>
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var myCenter = new google.maps.LatLng(50.71485, 22.68988);
+                var mapOptions = {
+                    center: myCenter,
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({
+                    position: myCenter,
+                    animation: google.maps.Animation.BOUNCE
+                });
+                marker.setMap(map);
+            }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?my-project-1532612006297&callback=myMap"></script>
+    </article>
+
 </body>
 
 </html>
 
 
+
+
+<!--do zmieniajacego napisu po klikneiciu w przycisk-->
+<!--
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+
+    </script>
+-->
+
+
+<!--
+
+        <div class="content">
+
+
+
+
+            <p id="demo">A Paragraph</p>
+            <button type="button" onclick="myFunction()">Try it</button>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. donec imperdiet nisi vitae justo faucibus, egestas vestibulum ante lobortis. phasellus ac magna quis libero placerat vehicula at at lorem. etiam porta mauris ut dolor mollis egestas. curabitur nulla sem, commodo ac vehicula et, placerat vel erat. cras id augue at dolor suscipit lobortis sit amet non sem. curabitur dignissim gravida mattis. integer volutpat, lacus vitae commodo fermentum, lacus lectus viverra lorem, id congue mauris eros laoreet ipsum. vestibulum consequat vehicula est et eleifend. donec pellentesque ipsum cursus pellentesque facilisis. duis placerat erat nec erat efficitur convallis. </p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quo sit quisquam nulla, fuga inventore necessitatibus, illo nesciunt accusamus optio totam! Possimus tempora, adipisci, molestias excepturi ullam quisquam qui cumque!</p>
+
+                <details>
+                    <summary>Copyright 1999-2018.</summary>
+                    <p> - by Refsnes Data. All Rights Reserved.</p>
+                </details>
+       
+
+    </div>
+    
+    <div id="square">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="bgrnd"></div>
+
+
+    <button type="button" onclick="alert('Hello World!')">kliknij!</button>
+    <button class="btn">przycisk</button>
+    <div id="wiecej"></div>
+    <form action="#" target="_blank" method="post" oninput="x.value=parseInt(a.value)" autocomplete="off">
+        <fieldset>
+            <legend>informacje osobiste:</legend>
+            <p style="font-size:15px;">ImiÄ™:</p>
+            <input type="text" name="imie">
+            <p style="font-size:15px;">wybierz pÅ‚eÄ‡:</p>
+            <input type="radio" name="gender" value="male" checked> <span style="font-size:15px;">Kobieta</span><br>
+            <input type="radio" name="gender" value="female"> <span style="font-size:15px;">MÄ™Å¼czyzna</span><br>
+
+            <select name="rok_urodzenia">
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                </select>
+
+            <input list="miesiace" name="miesiac">
+            <datalist id="miesiace">
+                    <option value="lipiec">
+                    <option value="sierpieÅ„">
+                    <option value="wrzesieÅ„">
+                  </datalist><br>
+
+            <input type="range" id="a" name="a" min="0" max="100"> <output name="x" for="a"></output><br>
+            <input type="number" id="b" name="b" min="0" max="50" step="10"><br>
+
+            <input type="checkbox" name="vehicle1" value="Bike"> mam laptop<br>
+            <input type="checkbox" name="vehicle2" value="Car"> mam telefon <br><br> favorite color:<input type="color" name="favcolor" value="#ff0000"><br> rok urodzenia:<input type="date" name="bday"><br> E-mail:
+            <input type="email" name="email"><br> User password:<input type="password" name="psw"><br> Wybierz plik: <input type="file" name="myFile"><br> godzina: <input type="time" name="usr_time"><br> Select images: <input type="file" name="img" multiple> trzy litery: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"> (podÅ›wietla co wprowadzic) <input type="text" name="fname" placeholder="First name"><br> (sprawdza czy wypeÅ‚niono) Username: <input type="text" name="usrname" required>
+
+            <input type="submit" name="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+
+
+    <textarea style="width: 100%" name="message" rows="5" cols="60" style="background-color:#000000;"> fajny tekÅ›cik w ramce i mozna cos dopisac
+            </textarea><br>
+
+    <iframe height="360" width="auto" src="https://www.youtube.com/embed/4t6rQDxJwno?list=PLPCRZIEYaNjPcj0ZKSDh6hGRKnlB3g8mq" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <div id="suwaki">
+        <section class="s1">
+            <div></div>
+            <h1>Lorem ipsum dolor.</h1>
+        </section>
+        <section class="s2">
+            <div></div>
+            <h1> Sit amet, consectetur.</h1>
+        </section>
+    </div>
+-->

@@ -28,7 +28,7 @@ body {
     width: 100%;
 }
 
-/*G£”WNE T£O*/
+/*G≈Å√ìWNE T≈ÅO*/
 
 .header {
     background-image: url(zdjecia/tlo1.jpg);
@@ -52,8 +52,8 @@ body {
 
 h1,
 h2 {
-    font-family: 'Maitree', serif;
     font-family: 'Raleway', sans-serif;
+/*    font-family: 'Lato', sans-serif;*/
     letter-spacing: 2px;
     padding: 0;
     text-align: center;
@@ -121,7 +121,7 @@ ol {
     list-style-type: none;
     line-height: 150%;
     display: inline-block;
-    /* bedzie wysrodkowane- konkurencja float:left (przywrÛci≥o dzia≥anie linijki w .nav : text-align:center;) */
+    /* bedzie wysrodkowane- konkurencja float:left (przywr√≥ci≈Ço dzia≈Çanie linijki w .nav : text-align:center;) */
 }
 
 ol a {
@@ -176,7 +176,7 @@ ol li ul li:hover a {
     color: black;
 }
 
-/*CZ å∆ O MNIE*/
+/*CZƒò≈öƒÜ O MNIE*/
 
 #o_mnie {
     padding: 0;
@@ -337,7 +337,8 @@ a.linkhtml5 {
 .footer {
     text-align: center;
     background-color: #d2d5db;
-    padding: 30px;
+    padding: 20px;
+    font-size: 15px;
 }
 
 /*PRZYKLEJONY SCROLL: ;*/
@@ -388,7 +389,7 @@ a.linkhtml5 {
     background-color: #b0cac8;
     position: relative;
     overflow: hidden;
-    height: 500px;
+    height: 600px;
     text-align: center;
 }
 
@@ -397,22 +398,26 @@ a.linkhtml5 {
 #contact {
     position: absolute;
     width: 100%;
-    top: 30%;
+    top: 10%;
 
 }
 
 input[type=email], input[type=text]{
-    width: 200px;
-    border: 2px solid #ddd;
+    width: 220px;
+    border: 1px solid #000000;
     color: #666;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: #efefef;
-    font-size: 18px;
+    font-size: 15px;
     padding: 10px;
     box-sizing: border-box;
     outline: none;
     /*obramowanie inputa*/
-    margin-top: 10px;
+    margin:10px 5px;
+}
+
+input[name=tytul]{
+    width:450px;
 }
 
 input[type=email]:focus ,
@@ -441,3 +446,185 @@ input[type=submit]:hover {
     box-shadow: 0 0 0 1px #c46898, 0 0 16px 3px rgba(0, 0, 0, 0.75);
 }
 
+textarea{
+    padding: 10px 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    width: 430px;
+    margin-top:10px;
+}
+
+
+
+.naglowek{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-top:35px;
+    text-align: center;
+}
+
+.underline{
+    width: 30px;
+    margin: 4px auto auto;
+    border-bottom: 2px solid;
+    display: block;
+}
+
+
+
+/*
+.logowanie {
+    width: 70%;
+    height: 400px;
+    background-color: #38ad96;
+    text-align: center;
+    margin: auto auto;
+    padding: 50px;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0px 0px 222px 27px rgba(0, 0, 0, 0.99);
+    -moz-box-shadow: inset 0px 0px 222px 27px rgba(0, 0, 0, 0.99);
+    box-shadow: inset 0px 0px 222px 27px rgba(0, 0, 0, 0.99);
+}
+*/
+
+/*
+.btn {
+    margin-top: 50px;
+    padding: 15px 20px;
+    border-style: none;
+    background-color: yellow;
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px black, 0 0 0 6px yellow;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 5px black, 0 0 0 10px yellow;
+    border-radius: 30px;
+}
+*/
+
+/*
+.content iframe {
+    float: left;
+    width: 60%;
+}
+
+*/
+
+/*
+#square {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    width: 400px;
+    border: 3px solid black;
+    font-size: 0;
+}
+
+#square div {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background-color: black;
+}
+
+#square div:nth-child(2n+1) {
+    background-color: white;
+}
+*/
+
+/*overflow:hidden;  element bedzie mial taka wysokosc jak jego dzieci*/
+
+/*
+.bgrnd {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(45deg, white, black 80%);
+}
+*/
+
+/*
+.content {
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+*/
+
+/*
+.parallax{
+    background: url('1679.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1500px;
+}
+*/
+
+/*
+.parallax div{
+    z-index:1;
+    position: relative;
+    margin:0;
+}
+*/
+
+/*
+
+#suwaki
+{
+    padding: 0;
+    margin: 0;
+}
+
+section
+{
+    position: relative;
+    height: 100vh;
+    font-size: 60px;
+}
+
+.s1
+{
+    background-color: darkcyan;
+}
+.s2
+{
+    background-color: royalblue;
+}
+
+section div
+{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    border:5px solid white;
+    top:30px;
+    right: 30px;
+    border-radius: 50%;
+}
+
+.s1 h1
+{
+    position: absolute;
+    top:40%;
+    left:-150%;
+   transition: 1s ease;
+}
+
+.s1 div:hover+h1
+{
+    position: absolute;
+    top:40%;
+    left:10%;
+}
+
+*/
